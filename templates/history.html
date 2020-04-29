@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style type="text/css">
+.table-responsive {
+    max-height:450px;
+}
+</style>
+    <h2> History </h2>
+        <div class="table-responsive">
+            <table id="data" class="table table-bordered table-striped table-light">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>User</th>
+                        <th>File Name</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                {% for datas in data %}
+                <tr>
+                    <td>{{ datas.user }}</td>
+                    <td>{{ datas.filename }}</td>
+                    <td>{{ datas.location }}</td>
+                    <td>{{ datas.date }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+   
+<script>
+    $(document).ready(function () {
+        $('#data').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>
+{% endblock %}

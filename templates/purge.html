@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+        <h1> Purge </h1>
+        <form action='' method="POST" target="_blank">
+            <div class="form-group">
+                <label>Enter the Id</label>
+                <input type="text" name="url" class="form-control" value={{request.form.url}}>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+        <br>
+        <hr>
+        <p>Search id from below table</p>
+        <button onclick="qa1()" id="btnqa1">QA1</button>
+        <button onclick="qa2()" id="btnqa2">QA2</button>
+        <button onclick="qa3()" id="btnqa3">QA3</button>
+        <div id="qa1App" class="table-responsive">
+            <table id="qa1tab" class="table table-bordered table-striped table-light">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Application name</th>
+                        <th>Plateform</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>ad1</td>
+                        <td>Adoddle - http://adoddleqaak.asite.com/*</td>
+                        <td>QA1</td>
+                    </tr>
+            </table>
+        </div>
+        <div id="qa2App" class="table-responsive">
+            <table id="qa2tab" class="table table-bordered table-striped table-light">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Application name</th>
+                        <th>Plateform</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>ad2</td>
+                        <td>Adoddle - http://adoddleqa2ak.asite.com/*</td>
+                        <td>QA2</td>
+                    </tr>
+            </table>
+        </div>
+        <div id="qa3App" class="table-responsive">
+            <table id="qa3tab" class="table table-bordered table-striped table-light">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Application name</th>
+                        <th>Plateform</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>ad3</td>
+                        <td>Adoddle - http://adoddleqa3ak.asite.com/*</td>
+                        <td>QA3</td>
+                    </tr>
+            </table>
+        </div>
+
+
+<script>
+    var tableA = document.getElementById("qa1tab");
+    var tableB = document.getElementById("qa2tab");
+    var tableC = document.getElementById("qa3tab");
+
+    var btnTabA = document.getElementById("btnqa1");
+    var btnTabB = document.getElementById("btnqa2");
+    var btnTabC = document.getElementById("btnqa3");
+    btnTabA.onclick = function () {
+        tableA.style.display = "table";
+        tableB.style.display = "none";
+        tableC.style.display = "none";
+    }
+    btnTabB.onclick = function () {
+        tableA.style.display = "none";
+        tableC.style.display = "none";
+        tableB.style.display = "table";
+    }
+    btnTabC.onclick = function () {
+        tableC.style.display = "table";
+        tableB.style.display = "none";
+        tableA.style.display = "none";
+    }
+</script>
+{% endblock %}
