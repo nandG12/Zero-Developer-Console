@@ -7,11 +7,11 @@ You need to download or install this packages for successfully run this project.
 
 1. pip install shutil
 1. pip install functools
-> 3.pip install flask
-> 4.pip install pandas
-> 5.pip install selenium
-> 6.For Selenium you need to download the chormedriver.exe from given Link. After Download paste .exe file in zero-developer-console folder.
-Download : https://chromedriver.chromium.org/downloads
+1. pip install flask
+1. pip install pandas
+1. pip install selenium
+1. For Selenium you need to download the chormedriver.exe from given Link. After Download paste .exe file in zero-developer-console folder.
+>https://chromedriver.chromium.org/downloads
 
 ###### By, Nand Gondha
 
