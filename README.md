@@ -1,5 +1,5 @@
 # Zero-Developer-Console
-This is an web-application in Python Flask Module. This web-application is used for the static file deployments and automatically divide and purge and with other Options for Deployments Teams.
+Zero Developer Console is web-application used for the static file deployments and auto purge and with other options for Deployments Teams.
 
 In this project, I used different Modules and packages of python listed below.
 
