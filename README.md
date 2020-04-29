@@ -4,9 +4,8 @@ This is an web-application in Python Flask Module. This web-application is used 
 In this project, I used different Modules and packages of python listed below.
 
 You need to download or install this packages for successfully run this project.
-#
+
 1.pip install shutil
-#
 2.pip install functools
 3.pip install flask
 4.pip install pandas
@@ -14,8 +13,5 @@ You need to download or install this packages for successfully run this project.
 6.For Selenium you need to download the chormedriver.exe from given Link. After Download paste .exe file in zero-developer-console folder.
 Download : https://chromedriver.chromium.org/downloads
 
+#By, Nand Gondha
 
-By,
-Nand Gondha
-
-#
