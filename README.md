@@ -1,9 +1,9 @@
 # Zero-Developer-Console
 Zero Developer Console is web-application used for the static file deployments and auto purge and with other options for Deployments Teams.
 
-In this project, I used different Modules and packages of python listed below.
+In this project, different Modules and packages of python listed below.
 
-You need to download or install this packages for successfully run this project.
+You need to install this packages for run this project.
 
 1. pip install shutil
 1. pip install functools
